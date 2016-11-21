@@ -16,6 +16,7 @@ For this first delivery, we will work only in the contact's list without any fun
 * This Level not included functionality, **read only**
 * Use the state to keep contact's list -- **Initial State**
 * Use the props for communication between componentes
+* Use props validation for all the cases
 
 ### A little help ...
 In the first place, take a look to the image from description section and try to think that image like components. Once you have an idea how to divide in components that image, you can tried your idea or go ahead with our recommendation:
