@@ -13,10 +13,10 @@ For this first delivery, we will work only in the contact's list without any fun
 
 ### Requirements
 * Use **Create React App** to environment setup (quick win)
-* User JSX Syntax
+* User **JSX Syntax**
 * This Level not included functionality, **read only**
 * Use the state to keep contact's list -- **Initial State**
-* Use the props for communication between componentes
+* Use props for communication between componentes
 * Use props validation for all the cases
 
 ### A little help ...
