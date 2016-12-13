@@ -6,8 +6,8 @@ The inline style not is a new approach, its the very old, [this is tried in 1996
 How we to see, there are two ways how to work with CSS in React JS.
 
 1. Style sheets
-..1. Internal
-..2. External
+⋅⋅1. Internal
+⋅⋅2. External
 
 2. Embedded CSS  
 
