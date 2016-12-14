@@ -145,8 +145,10 @@ class App extends React.Component {
     );
   }
 }
-```
+
 export default App;
+```
+
 The color of myDiv element is changed to green, once the button is clicked.
 
 ![][3]
@@ -193,11 +195,13 @@ If props.color is set to null, it will remain null:
 
 ## displayName
 
-The displayName string is used in debugging messages. JSX sets this value automatically; see JSX in Depth.
+The displayName string is used in debugging messages. JSX sets this value automatically;
 
 ## propTypes
 
-propTypes can be defined as a property on the component class itself, to define what types the props should be. It should be a map from prop names to types as defined in React.PropTypes. In development mode, when an invalid value is provided for a prop, a warning will be shown in the JavaScript console. In production mode, propTypes checks are skipped for efficiency.
+propTypes can be defined as a property on the component class itself, to define what types the props should be. It should be a map from prop names to types as defined in React.PropTypes. 
+
+In development mode, when an invalid value is provided for a prop, a warning will be shown in the JavaScript console. In production mode, propTypes checks are skipped for efficiency.
 
 For example, this code ensures that the color prop is a string:
 
@@ -211,7 +215,7 @@ CustomButton.propTypes = {
 };
 ```
 
-We recommend using Flow when possible, to get compile-time typechecking instead of runtime typechecking. Flow has built-in support for React so it's easy to run static analysis on a React app.
+We recommend using [Flow][4] when possible, to get compile-time typechecking instead of runtime typechecking. Flow has built-in support for React so it's easy to run static analysis on a React app.
 
 # Instance Properties
 
@@ -234,3 +238,4 @@ Never mutate this.state directly, as calling setState() afterwards may replace t
 [1]: https://www.tutorialspoint.com/reactjs/images/react-component-api-set-state.jpg
 [2]: https://www.tutorialspoint.com/reactjs/images/react-component-api-force-update.jpg
 [3]: https://www.tutorialspoint.com/reactjs/images/react-component-api-find-dom-node.jpg
+[4]: https://flowtype.org/
