@@ -67,7 +67,9 @@ For example, with the above ours code
   <!DOCTYPE html>
   <html>
     <body>
-      <h1 style="color: white; font-family: 'Roboto';">Learn to code and design from industry leaders</h1>
+      <h1 style="color: white; font-family: 'Roboto';">
+        Learn to code and design from industry leaders
+      </h1>
     </body>
   </html>
 ```
