@@ -67,37 +67,35 @@ We started with empty array. Every time we click the button, the state will be u
 ## forceUpdate()
 
 component.forceUpdate(callback)
+
+Sometimes you want to update the component manually. You can achieve this by using forceUpdate() method.
+
 By default, when your component's state or props change, your component will re-render. If your render() method depends on some other data, you can tell React that the component needs re-rendering by calling forceUpdate().
 
 Calling forceUpdate() will cause render() to be called on the component, skipping shouldComponentUpdate(). This will trigger the normal lifecycle methods for child components, including the shouldComponentUpdate() method of each child. React will still only update the DOM if the markup changes.
 
 Normally you should try to avoid all uses of forceUpdate() and only read from this.props and this.state in render().
 
-//////////////////////////////////////////
-
-Force Update
-Sometimes you want to update the component manually. You can achieve this by using forceUpdate() method.
+### Example:
 
 ```javascript
 import React from 'react';
 
 class App extends React.Component {
-constructor() {
-super();
-this.forceUpdateHandler = this.forceUpdateHandler.bind(this);
+  constructor() {
+  super();
+  this.forceUpdateHandler = this.forceUpdateHandler.bind(this);
 };
 
 forceUpdateHandler() {
-this.forceUpdate();
+  this.forceUpdate();
 };
 
 render() {
-return (
-
-#### Random number: {Math.random()}
-
-);
-}
+  return (
+    Random number: {Math.random()}
+   );
+  }
 }
 
 export default App;
@@ -109,30 +107,31 @@ We are setting random number that will be updated every time the button is click
 
 ## Find Dom Node
 
-For DOM manipulation, we can use ReactDOM.findDOMNode() method. First we need to import react-dom.
+For DOM manipulation, we can use ReactDOM.findDOMNode() method. 
+First we need to import react-dom.
 
+```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 class App extends React.Component {
-constructor() {
-super();
-this.findDomNodeHandler = this.findDomNodeHandler.bind(this);
-};
+  constructor() {
+    super();
+    this.findDomNodeHandler = this.findDomNodeHandler.bind(this);
+  };
 
-findDomNodeHandler() {
-var myDiv = document.getElementById('myDiv');
-ReactDOM.findDOMNode(myDiv).style.color = 'green';
+  findDomNodeHandler() {
+    var myDiv = document.getElementById('myDiv');
+    ReactDOM.findDOMNode(myDiv).style.color = 'green';
+  }
+
+  render() {
+    return (
+      NODE
+    );
+  }
 }
-
-render() {
-return (
-
-NODE
-);
-}
-}
-
+```
 export default App;
 The color of myDiv element is changed to green, once the button is clicked.
 
@@ -144,21 +143,26 @@ The color of myDiv element is changed to green, once the button is clicked.
 
 defaultProps can be defined as a property on the component class itself, to set the default props for the class. This is used for undefined props, but not for null props. For example:
 
-```
-    class CustomButton extends React.Component {
+```javascript
+class CustomButton extends React.Component {
   // ...
 }
 
 CustomButton.defaultProps = {
   color: 'blue'
 };
-If props.color is not provided, it will be set by default to 'blue':
+```
 
+If props.color is not provided, it will be set by default to 'blue':
+```javascript
   render() {
     return  ; // props.color will be set to blue
   }
+```
+
 If props.color is set to null, it will remain null:
 
+```javascript
   render() {
     return  ; // props.color will remain null
   }
@@ -168,11 +172,13 @@ If props.color is set to null, it will remain null:
 
 The displayName string is used in debugging messages. JSX sets this value automatically; see JSX in Depth.
 
-propTypes
+## propTypes
+
 propTypes can be defined as a property on the component class itself, to define what types the props should be. It should be a map from prop names to types as defined in React.PropTypes. In development mode, when an invalid value is provided for a prop, a warning will be shown in the JavaScript console. In production mode, propTypes checks are skipped for efficiency.
 
 For example, this code ensures that the color prop is a string:
 
+```javascript
 class CustomButton extends React.Component {
 // ...
 }
@@ -180,16 +186,20 @@ class CustomButton extends React.Component {
 CustomButton.propTypes = {
 color: React.PropTypes.string
 };
+```
+
 We recommend using Flow when possible, to get compile-time typechecking instead of runtime typechecking. Flow has built-in support for React so it's easy to run static analysis on a React app.
 
 # Instance Properties
 
-props
+##props
+
 this.props contains the props that were defined by the caller of this component. See Components and Props for an introduction to props.
 
 In particular, this.props.children is a special prop, typically defined by the child tags in the JSX expression rather than in the tag itself.
 
-state
+##state
+
 The state contains data specific to this component that may change over time. The state is user-defined, and it should be a plain JavaScript object.
 
 If you don't use it in render(), it shouldn't be on the state. For example, you can put timer IDs directly on the instance.
