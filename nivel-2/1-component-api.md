@@ -78,6 +78,7 @@ Normally you should try to avoid all uses of forceUpdate() and only read from th
 Force Update
 Sometimes you want to update the component manually. You can achieve this by using forceUpdate() method.
 
+```javascript
 import React from 'react';
 
 class App extends React.Component {
@@ -100,6 +101,8 @@ return (
 }
 
 export default App;
+```
+
 We are setting random number that will be updated every time the button is clicked.
 
 ![][2]
