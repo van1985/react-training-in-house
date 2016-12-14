@@ -231,8 +231,6 @@ The state contains data specific to this component that may change over time. Th
 
 If you don't use it in render(), it shouldn't be on the state. For example, you can put timer IDs directly on the instance.
 
-See State and Lifecycle for more information about the state.
-
 Never mutate this.state directly, as calling setState() afterwards may replace the mutation you made. Treat this.state as if it were immutable.
 
 [1]: https://www.tutorialspoint.com/reactjs/images/react-component-api-set-state.jpg
