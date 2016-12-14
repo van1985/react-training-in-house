@@ -31,7 +31,7 @@ There is no guarantee of synchronous operation of calls to setState and calls ma
 
 setState() will always lead to a re-render unless shouldComponentUpdate() returns false. If mutable objects are being used and conditional rendering logic cannot be implemented in shouldComponentUpdate(), calling setState() only when the new state differs from the previous state will avoid unnecessary re-renders.
 
-### Example
+### Example:
 
 ```javascript
 class App extends React.Component {
@@ -66,7 +66,9 @@ We started with empty array. Every time we click the button, the state will be u
 
 ## forceUpdate()
 
+```javascript
 component.forceUpdate(callback)
+```
 
 Sometimes you want to update the component manually. You can achieve this by using forceUpdate() method.
 
@@ -107,8 +109,20 @@ We are setting random number that will be updated every time the button is click
 
 ## Find Dom Node
 
-For DOM manipulation, we can use ReactDOM.findDOMNode() method. 
-First we need to import react-dom.
+```javascript
+ReactDOM.findDOMNode(component)
+```
+If this component has been mounted into the DOM, this returns the corresponding native browser DOM element. This method is useful for reading values out of the DOM, such as form field values and performing DOM measurements. **In most cases, you can attach a ref to the DOM node and avoid using `findDOMNode` at all.** When `render` returns `null` or `false`, `findDOMNode` returns `null`.
+
+**Note**
+
+`findDOMNode` is an escape hatch used to access the underlying DOM node. In most cases, use of this escape hatch is discouraged because it pierces the component abstraction.
+
+`findDOMNode` only works on mounted components (that is, components that have been placed in the DOM). If you try to call this on a component that has not been mounted yet (like calling `findDOMNode()` in `render()` on a component that has yet to be created) an exception will be thrown.
+
+`findDOMNode` cannot be used on functional components.
+
+### Example:
 
 ```javascript
 import React from 'react';
