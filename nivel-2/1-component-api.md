@@ -2,7 +2,7 @@
 
 ## setState()
 
-```
+```javascript
 setState(nextState, callback)
 ```
 setState() method is used for updating the state of the component. This method will not replace the state but only add changes to original state. This is the primary method you use to trigger UI updates from event handlers and server request callbacks.
@@ -11,13 +11,13 @@ The first argument can be an object (containing zero or more keys to update) or 
 
 Here is the simple object usage:
 
-```
+```javascript
 this.setState({mykey: 'my new value'});
 ```
 
 It's also possible to pass a function with the signature function(state, props) =\> newState. This enqueues an atomic update that consults the previous value of state and props before setting any values. For instance, suppose we wanted to increment a value in state by props.step:
 
-```
+```javascript
 this.setState((prevState, props) => {
   return {myInteger: prevState.myInteger + props.step};
 });
@@ -33,7 +33,7 @@ setState() will always lead to a re-render unless shouldComponentUpdate() return
 
 ### Example
 
-```
+```javascript
 class App extends React.Component {
    constructor() {
       super();
