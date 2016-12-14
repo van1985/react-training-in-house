@@ -180,7 +180,7 @@ For example, this code ensures that the color prop is a string:
 
 ```javascript
 class CustomButton extends React.Component {
-// ...
+  // ...
 }
 
 CustomButton.propTypes = {
