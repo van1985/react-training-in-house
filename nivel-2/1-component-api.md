@@ -151,6 +151,15 @@ The color of myDiv element is changed to green, once the button is clicked.
 
 ![][3]
 
+### unmountComponentAtNode()
+
+```javascript
+ReactDOM.unmountComponentAtNode(container)
+```
+
+Remove a mounted React component from the DOM and clean up its event handlers and state. If no component was mounted in the container, calling this function does nothing. Returns `true` if a component was unmounted and `false` if there was no component to unmount.
+
+
 # Class Properties
 
 ## defaultProps
