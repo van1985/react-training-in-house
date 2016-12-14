@@ -83,18 +83,18 @@ import React from 'react';
 
 class App extends React.Component {
   constructor() {
-  super();
-  this.forceUpdateHandler = this.forceUpdateHandler.bind(this);
-};
+    super();
+    this.forceUpdateHandler = this.forceUpdateHandler.bind(this);
+  };
 
-forceUpdateHandler() {
-  this.forceUpdate();
-};
+  forceUpdateHandler() {
+    this.forceUpdate();
+  };
 
-render() {
-  return (
-    Random number: {Math.random()}
-   );
+  render() {
+    return (
+      Random number: {Math.random()}
+    );
   }
 }
 
@@ -184,7 +184,7 @@ class CustomButton extends React.Component {
 }
 
 CustomButton.propTypes = {
-color: React.PropTypes.string
+  color: React.PropTypes.string
 };
 ```
 
@@ -192,13 +192,13 @@ We recommend using Flow when possible, to get compile-time typechecking instead 
 
 # Instance Properties
 
-##props
+## props
 
 this.props contains the props that were defined by the caller of this component. See Components and Props for an introduction to props.
 
 In particular, this.props.children is a special prop, typically defined by the child tags in the JSX expression rather than in the tag itself.
 
-##state
+## state
 
 The state contains data specific to this component that may change over time. The state is user-defined, and it should be a plain JavaScript object.
 
