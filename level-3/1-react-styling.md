@@ -1,15 +1,15 @@
 #React styling
 
-The battle has begun. Since React JS is out, the old technique of applied **Embedded CSS** waked up.
-Nowadays, we were have comfortable with ours best practices with style sheets and preprocessors like less or sass in others.
-The inline style not is a new approach, its the very old, [this is tried in 1996](https://en.wikipedia.org/wiki/JavaScript_Style_Sheets) and it was a bad idea in that moment.
-How we to see, there are two ways how to work with CSS in React JS.
+The battle has begun. Since React JS is out, the old technique of applied **Inline style** waked up.
+Nowadays, we were have comfortable with ours best practices with style sheets and preprocessors like [less](http://lesscss.org/) or [sass](http://sass-lang.com/) in others.
+The Inline style not is a new approach, its the very old, [this is tried in 1996](https://en.wikipedia.org/wiki/JavaScript_Style_Sheets) and it was a bad idea in that moment. The main discussion about this topic is **Inline style vs. Style sheets**.
+How to see previously, there are two main ways [how to work with CSS](http://www.w3schools.com/css/css_howto.asp) in React JS.
 
 1. Style sheets
   1. Internal
   2. External
 
-2. Embedded CSS  
+2. Inline style  
 
 ## When we speak the Style sheets
 
@@ -57,7 +57,7 @@ After that you have to link this style sheet to your source HTML document with t
   </html>
 ```
 
-## When we speak the Embedded CSS
+## When we speak the Inline style
 
 We are speak about when you put your styles inside to a HTML element.
 
