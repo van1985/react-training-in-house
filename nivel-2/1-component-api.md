@@ -179,7 +179,7 @@ CustomButton.defaultProps = {
 If props.color is not provided, it will be set by default to 'blue':
 ```javascript
   render() {
-    return  ; // props.color will be set to blue
+    return <CustomButton /> ; // props.color will be set to blue
   }
 ```
 
@@ -187,7 +187,7 @@ If props.color is set to null, it will remain null:
 
 ```javascript
   render() {
-    return  ; // props.color will remain null
+    return <CustomButton color={null} /> ; // props.color will remain null
   }
 ```
 
