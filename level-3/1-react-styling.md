@@ -31,7 +31,7 @@ How to see previously, there are two main ways [how to work with CSS](http://www
 
 ###External
 
-We are speak about when you create the code style in a file .css. With this file, you will able to write all style for you website or application. After that, you need to have link the style sheet with your HTML. [The definition according W3](https://www.w3.org/TR/html401/present/styles.html)
+We are speak about when you create the code style in a file .css. With this file, you will able to write all style for you website or application. After that, you need to have link the style sheet with your HTML. [The definition according W3.](https://www.w3.org/TR/html401/present/styles.html)
 
 
 For example, the following short CSS style sheet (stored in the file "acamica.css"), sets the text color of a paragraph to white and surrounds it with font family Roboto:
@@ -52,7 +52,9 @@ After that you have to link this style sheet to your source HTML document with t
       <link href="acamica.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-      <h1 class="welcome-acamica">Learn to code and design from industry leaders</h1>
+      <h1 class="welcome-acamica">
+        Learn to code and design from industry leaders
+      </h1>
     </body>
   </html>
 ```
