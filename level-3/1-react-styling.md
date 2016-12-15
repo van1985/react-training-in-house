@@ -24,7 +24,9 @@ How to see previously, there are two main ways [how to work with CSS](http://www
     }
     </style>
   <body>
-    <h1 class="welcome-acamica">Learn to code and design from industry leaders</h1>
+    <h1 class="welcome-acamica">
+      Learn to code and design from industry leaders
+    </h1>
   </body>
   </head>
 ```
