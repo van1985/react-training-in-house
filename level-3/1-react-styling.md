@@ -15,7 +15,7 @@ How to see previously, there are two main ways [how to work with CSS](http://www
 
 ###Internal
 
-```
+```html
   <head>
     <style>
     .welcome-acamica {
@@ -36,7 +36,7 @@ We are speak about when you create the code style in a file .css. With this file
 
 For example, the following short CSS style sheet (stored in the file "acamica.css"), sets the text color of a paragraph to white and surrounds it with font family Roboto:
 
-```
+```css
   .welcome-acamica {
     color : white;
     font-family: 'Roboto';
@@ -45,7 +45,7 @@ For example, the following short CSS style sheet (stored in the file "acamica.cs
 
 After that you have to link this style sheet to your source HTML document with the LINK element:
 
-```
+```html
   <!DOCTYPE html>
   <html>
     <head>
@@ -63,7 +63,7 @@ We are speak about when you put your styles inside to a HTML element.
 
 For example, with the above ours code
 
-```
+```html
   <!DOCTYPE html>
   <html>
     <body>
