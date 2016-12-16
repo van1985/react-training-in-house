@@ -1,0 +1,36 @@
+.ContactItem {
+  height: 44px;
+  padding: 10px;
+  padding: 10px;
+  background-color: #CCCCCC;
+  border: 1px solid #8e8787;
+  margin-bottom: 10px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .img__container {
+    width: 47px;
+    height: 42px;
+    border: 1px solid #8e8787;
+    background-color: #ffffff;
+    float: left
+  }
+
+  .p__container {
+    width: calc(100% - 59px);
+    height: 44px;
+    border: 1px;
+    background-color: #e2e1e2;
+    float: left;
+    margin-left: 10px;
+
+    p {
+      margin: 0;
+      font-size: 13px;
+      font-family: monospace;
+      padding: 8px 0 0 30px;
+    }
+  }
+}
