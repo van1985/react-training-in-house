@@ -1,0 +1,21 @@
+.List {
+  width: calc(100% - 20px);
+  height: calc(100% - 83px);
+  overflow-y: scroll;
+  border: 1px solid #8e8787;
+  padding: 10px;
+  background-color: #ffffff;
+
+  &__spinner {
+  	width: 48px;
+  	height: 48px;
+  	margin: calc(50% - 35px) calc(50% - 16px);
+
+  	span {
+      width: 48px;
+      height: 48px;
+      position: absolute;
+  		background-image: url('http://trucks.autotrader.co.uk/merlin-web-uk-tpf/web/images/vehicleFinder/spinner.gif');
+  	}
+  }
+}
