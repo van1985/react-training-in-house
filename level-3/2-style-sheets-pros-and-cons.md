@@ -26,10 +26,10 @@ Style sheets, it allows us work with all power of the CSS. During a long time, w
 
 ###Separation of concerns
 
-The Separation of concerns, is the most important feature in web development. We need have in clear we are building the new generation of app or websites. Separation of concerns, means that you don't have to mix different concerns. For example, HTML is useful  for show a element in the website, when you to need show one list you use a tag that do the that work, in this case you have to use <ul></ul> or <ol></ol>, depends what you need show.
+The Separation of concerns, is the most important feature in web development. We need have in clear we are building the new generation of app or websites. Separation of concerns, means that you don't have to mix different concerns. For example, HTML is useful  for show a element in the website, when you to need show one list you use a tag that do the that work, in this case you have to use **ul** or **ol**, depends what you need show.
 When you need interaction, in this case appear Javascript. So, if you need change the look, you should use CSS.
 
-##Easy to apply
+###Easy to apply
 
 Style sheets, only link the css file in your html file and it just works.
 
